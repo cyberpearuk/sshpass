@@ -1,0 +1,13 @@
+sudo: required
+
+services:
+  - docker
+
+script:
+  - docker build -t cyberpearuk/sshpass .
+
+deploy:
+  provider: script
+  script: bash deploy.sh
+  on:
+    branch: master
