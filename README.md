@@ -16,3 +16,6 @@ docker run -it cyberpearuk/sshpass -e scp -o StrictHostKeyChecking=no $CI_PROJEC
 ```bash
 docker run -it cyberpearuk/sshpass  -e ssh -o StrictHostKeyChecking=no $REMOTE_USER@$REMOTE_SERVER do-release $CI_PROJECT_NAME $CI_ENVIRONMENT_URL
 ```
+## Maintainer
+
+This repository is maintained by [Black Pear Digital](https://www.blackpeardigital.co.uk).
